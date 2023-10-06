@@ -1,0 +1,966 @@
+/* lato-100 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/lato-v24-latin-100.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato-v24-latin-100.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/lato-v24-latin-100.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/lato-v24-latin-100.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/lato-v24-latin-100.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/lato-v24-latin-100.svg#Lato') format('svg');
+    /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato-v24-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/lato-v24-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/lato-v24-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/lato-v24-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/lato-v24-latin-regular.svg#Lato') format('svg');
+    /* Legacy iOS */
+}
+
+/* body{
+    font-family: 'Lato', sans-serif;
+} */
+
+
+
+/* ====================================================Default CSS==================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+
+img{
+    width: 100%;
+    height:100%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.pt-90{
+    padding-top: 90px;
+}
+
+.pb-130{
+    padding-bottom: 130px;
+}
+
+.pb-58{
+    padding-bottom: 58px;
+}
+
+.ptb-60{
+    padding: 60px 0;
+}
+
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --dark-green:#00cb99;
+    --gray:#777777;
+    --pista:#8bd485;
+    --dark-gray:#aaaaaa;
+    --dark-black:#121212;
+    --dark-black1:#333333;
+    --off-white:#e8e8e8;
+    --red-color:#ec5051;
+    --yellow-color:#efb920;
+    --dark-white:#f5f5f5;
+    --d-white:#f3f3f3;
+    --d1-white:#f7f7f7;
+}
+
+h3{
+    font-weight: 700;
+    margin: 45px 0 74px 0;
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 1;
+}
+
+h3::before{
+    content: '';
+    width: 80px;
+    background-color: var(--dark-green);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    height: 3px;
+    margin-left: -40px;
+}
+
+/* ====================================================Hearder CSS Start==================================================== */
+
+
+.logo img{
+    width: 186px;
+    height:27px;
+}
+
+li a{
+    padding: 25px 10px;
+    display: block;
+    font-size: 14px;
+    color: var(--dark-black);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 3px;
+    transition: .4s;
+    line-height: 21px;
+}
+
+li a:hover{
+    color:var(--dark-green);
+}
+
+/* ====================================================Slider CSS Start==================================================== */
+
+.slider{
+    padding: 165px  250px ;
+    background-position: center center;
+}
+
+.slider1{
+    background-image: url(../images/asset\ 17.jpeg);
+}
+
+.slider2{
+    background-image: url(../images/asset\ 18.jpeg);
+}
+
+.slider_text h1{
+    color:var(--dark-black);
+    font-size: 138px;
+    text-transform: capitalize;
+    margin-top: 21px;
+}
+
+.slider_text h2{
+    font-size: 42px;
+    margin: 10px 0 45px;
+    color: var(--dark-black1);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.slider_text .btn a{
+    color: var(--white-color);
+    background-color: var(--dark-green);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 15px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 17px;
+    transition: .2s;
+}
+
+.slider_text .btn a:hover{
+    background-color: transparent;
+    border: 1px solid var(--dark-green);
+    color: var(--dark-green);
+}
+
+h1 span{
+    color: var(--dark-green);
+}
+
+#slider1.owl-theme .owl-dots{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+
+#slider1.owl-theme .owl-dots .owl-dot span{
+    height: 12px;
+    width: 12px;
+    background-color: var(--dark-green);
+    opacity: .4; 
+    margin: 5px;
+}
+
+#slider1.owl-theme .owl-dots .owl-dot.active span{
+    background-color: var(--dark-green);
+    opacity: 1;
+}
+
+#slider1.owl-theme .owl-nav{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 60px;
+    line-height: 1;
+    color: var(--dark-green);
+}
+
+#slider1.owl-carousel .owl-nav button.owl-prev,
+#slider1.owl-carousel .owl-nav button.owl-next{
+    transition: .4s;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+
+#slider1.owl-carousel .owl-nav button.owl-prev{   
+    left: 100px;
+}
+
+#slider1.owl-carousel .owl-nav button.owl-next{   
+    right: 100px;
+}
+
+
+#slider1.owl-carousel .owl-nav button.owl-prev:hover,
+#slider1.owl-carousel .owl-nav button.owl-next:hover{
+    background-color: transparent;
+    color: var(--dark-green);
+    opacity: .4;
+}
+
+#slider1.owl-theme .owl-nav .disabled{
+    opacity: 0!important;
+}
+
+/* ====================================================Categories CSS Start==================================================== */
+
+.product_1,
+.product_3{
+    width: 25%;
+}
+
+.product_2{
+    width: 50%;
+}
+
+.categories_img{
+    gap: 30px;
+}
+
+/* ====================================================Featured Product CSS Start==================================================== */
+
+.product_card .card{
+    width: 33.33%;
+}
+
+.product_card{
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card_img .img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .6s;
+}
+
+.featured_product1{
+    padding-bottom: 30px;
+}
+
+.card_img a{
+    display: flex;
+}
+
+.card_img{
+    position: relative;
+    overflow: hidden;
+}
+
+.card_img:hover .img1{
+    opacity: 1;
+}
+
+.card_box span{
+    font-size:13px;
+    color: var(--white-color);
+    padding: 2px 13px;
+    display: block;
+    background-color: var(--red-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.box1 span{
+    background-color: var(--pista);
+}
+
+.card_text a{
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: var(--black-color);
+    margin: 20px 0 11px 0;
+    display: block;
+    transition: .4s;
+}
+
+.card_text a:hover{
+    color: var(--dark-green);
+}
+
+.card_text span{
+    display: block;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--dark-green);
+    cursor: pointer;
+    padding-bottom: 11px;
+}
+
+.card_text span del{
+    font-size: 14px;
+    margin-left: 8px;
+    color: var(--dark-gray);
+}
+
+.card_text button{
+    border: none;
+    background: none;
+}
+
+.card_text button a{
+    color: var(--dark-black);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.card_text button a:hover{
+    color: var(--dark-green);
+}
+
+#slider2.owl-theme .owl-dots .owl-dot span{
+    height: 12px;
+    width: 12px;
+    background-color: var(--dark-green);
+    opacity: .4; 
+    margin: 5px;
+}
+
+#slider2.owl-theme .owl-dots .owl-dot.active span{
+    background-color: var(--dark-green);
+    opacity: 1;
+}
+
+#slider2 .item{
+    margin-bottom: 60px;
+}
+
+/* ====================================================Our Product CSS Start==================================================== */
+
+.our_product{
+    background-image:linear-gradient(rgb(0, 0, 0,0.6),rgb(0, 0, 0,0.6)), url(../images/asset\ 19.png);
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    padding: 50px 0 140px 0;
+}
+
+.our_product_text h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 14px;
+    margin-top: 14px;
+    padding-top: 30px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.our_product_text h2{
+    margin-bottom: 14px;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.our_product_text span{
+    color: var(--dark-green);
+}
+
+.our_product_text p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    width: 87%;
+    color: var(--white-color);
+    line-height: 30px;
+}
+
+.our_product_text .btn a{
+    background-color: var(--dark-green);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 11px 33px;
+    color: var(--white-color);
+    display: inline-block;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.our_product_text .btn a:hover{
+    background-color: transparent;
+    border: 1px solid var(--dark-green);
+    color: var(--dark-green);
+}
+
+/* ====================================================Summer CSS Start==================================================== */
+
+.theme{
+    background-color: var(--dark-white);
+}
+.summer_text{
+    width: 60%;
+    padding: 71px 30px 30px 0;
+}
+
+.summer_img{
+    width: 40%;
+    position: relative;
+}
+
+.summer_sale{
+    gap: 30px;
+}
+
+.summer_text h2{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: var(--dark-black);
+    font-weight: 700;
+}
+
+.summer_text p{
+    color: var(--gray);
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.summer_img .img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .6s;
+}
+
+.summer_img:hover .img1{
+    opacity: 1;
+}
+
+.summer_time{
+    gap: 3px;
+    margin-bottom: 30px;
+}
+
+.summer_time .day{
+    background-color: var(--white-color);
+    width: 20%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.summer_time .day span{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--dark-black);
+    display: block;
+    margin-bottom: 0;
+}
+
+.summer_time p{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: var(--dark-black);
+}
+
+.summer_text span{
+    font-size: 28px;
+    margin-bottom: 30px;
+    display: block;
+    color: var(--dark-black);
+    font-weight: 700;
+}
+
+.summer_text span del{
+    font-size: 18px;
+    margin-left: 9px;
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+.summer_text .btn a{
+    background-color: var(--dark-green);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 28px;
+    color: var(--white-color);
+    display: inline-block;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.summer_text .btn a:hover{
+    background-color: transparent;
+    border: 1px solid var(--dark-green);
+    color: var(--dark-green);
+}
+
+.summer_img{
+    margin-bottom: 80px;
+}
+
+/* ====================================================testimonial CSS Start==================================================== */
+
+.testimonial{
+    background-image: url(../images/asset\ 20.jpeg);
+    padding: 19px 0 60px;
+    background-position: center center;
+}
+
+.testimonial .card .img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: -55px;
+}
+
+.testimonial .card .img img{
+    border-radius: 50%;
+}
+
+.testimonial .card{
+    background-color: var(--white-color);
+    text-align: center;
+    width: 700px;
+    margin: 40px auto 0;
+    padding: 15px 60px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 36px 56px 0px;
+}
+
+.testimonial .card h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-top: 21px;
+    font-weight: 700;
+}
+
+.testimonial .card span{
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin: 15px 0;
+}
+
+.testimonial .card p{
+    font-size: 18px;
+    color: var(--dark-gray);
+    line-height: 26px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.owl-dots{
+    margin-top: 20px;
+}
+
+#slider3.owl-theme .owl-dots .owl-dot span{
+    height: 12px;
+    width: 12px;
+    background-color: var(--dark-green);
+    opacity: .4; 
+    margin: 5px;
+}
+
+#slider3.owl-theme .owl-dots .owl-dot.active span{
+    background-color: var(--dark-green);
+    opacity: 1;
+}
+
+#slider3.owl-theme .owl-nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 60px;
+    line-height: 1;
+    color: var(--dark-green);
+}
+
+#slider3.owl-carousel .owl-nav button.owl-prev,
+#slider3.owl-carousel .owl-nav button.owl-next{
+    transition: .4s;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+
+#slider3.owl-carousel .owl-nav button.owl-prev{   
+    left: 100px;
+}
+
+#slider3.owl-carousel .owl-nav button.owl-next{   
+    right: 100px;
+}
+
+
+#slider3.owl-carousel .owl-nav button.owl-prev:hover,
+#slider3.owl-carousel .owl-nav button.owl-next:hover{
+    background-color: transparent;
+    color: var(--dark-green);
+    opacity: .4;
+}
+
+#slider3.owl-theme .owl-nav .disabled{
+    opacity: 0!important;
+}
+
+/* ====================================================Free Shipping CSS Start==================================================== */
+
+.orders{
+    text-align: center;
+}
+
+.shipping,
+.gift,
+.back,
+.support{
+    padding: 59px 0 46px 0;
+    width: 25%;
+}
+
+.shipping,
+.back{
+    background-color: var(--d-white);
+}
+
+.gift,
+.support{
+    background-color: var(--off-white);
+}
+
+.shipping i,
+.gift i,
+.back i,
+.support i{
+    font-size:40px;
+    color: var(--dark-green);
+}
+
+.orders h2{
+    text-transform: uppercase;
+    margin: 21px 0 15px 0;
+    font-size:22px;
+    font-weight: 700;
+}
+
+.orders  p{
+    color: var(--dark-black);
+    margin-bottom: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/* ====================================================Contact CSS Start==================================================== */
+
+.contact_data{
+    width: 35%;
+}
+
+.contact_form{
+    width: 65%;
+    margin-bottom: 67px;
+    padding-left: 12px;
+}
+
+.input_form{
+    margin-bottom: 15px;
+}
+
+.input_form input,
+.input_form textarea{
+    border: none;
+    padding: 6px 12px 6px 0;
+    font-size: 15px;
+    width: 100%;
+    border-bottom: 2px solid #aaaaaa;
+    color: #121212;
+    font-weight: 300;
+    display: block;
+}
+
+form button{
+    background-color: var(--dark-green);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color:#fff;
+    font-weight: 700;
+    padding: 12px 28px;
+    transition: .3s;
+    margin-top: 30px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+}
+
+form button:hover{
+    border: 1px solid var(--dark-green);
+    color: var(--dark-green);
+    background: none;
+}
+
+.contact_text h4{
+    margin-bottom: 21px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.contact_text{
+    margin-bottom: 10px;
+}
+
+.contact_text ul{
+    display: block;
+    margin-bottom: 36px;
+    width: 100%;
+}
+
+.contact_text li{
+    color: #121212;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 11px;
+    text-align: left;
+    display: block;
+    margin-bottom:1px;
+    width: 100%;
+    float: left;
+    height: 43px;
+}
+
+.contact_text li .icon{
+    color: var(--dark-green);
+    text-align: center;
+    font-size: 22px;
+    margin-right: 10px;
+    height: 43px;
+    line-height: 11px;
+    width:23px;
+}
+
+/* ====================================================Map CSS Start==================================================== */
+
+iframe{
+    width: 100%;
+    height: 640px;
+}
+
+/* ====================================================Footer CSS Start==================================================== */
+
+footer{
+    padding-top: 80px;
+    padding-bottom: 15px;
+}
+
+.f_text,
+.f_menu,
+.f_email{
+    width:33.33%;
+}
+
+.f_text{
+    padding-right: 15px;
+}
+
+.f_text a img{
+    /* width:65%; */
+    width: 235px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.f_text p{
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.f_menu{
+    padding: 0 15px 0 50px;
+}
+
+.f_menu h4{
+    margin: 4px 0 15px 0;
+    text-transform: uppercase;
+}
+
+.f_menu ul{
+    margin-right: 21px;
+    display: inline-block;
+    /* float: left; */
+}
+
+.f_menu li a{
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.f_menu li a:hover{
+    color: #00cb99;
+}
+
+.f_email{
+    padding-left: 15px;
+}
+
+.f_email h4{
+    margin-bottom: 15px;
+    margin-top: 4px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+form input{
+    width: 100%;
+    border: none;
+    height: 47px;
+    padding: 6px 12px;
+    border-bottom: 2px solid #aaaaaa;
+}
+
+form span button{
+    margin: 0;
+    border-radius: 0;
+}
+
+.social{
+    margin-top: 25px;
+    float: left;
+}
+
+.social .find{
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 9px;
+}
+
+.social ul{
+    justify-content: space-around;
+    display: flex;
+}
+
+.social a{
+    color: #555555;
+    padding: 7px 0 5px 0;
+    font-size: 14px;
+    display: block;
+    margin-right: 15px;
+}
+
+.line{
+    border: 1px solid #ffffff;
+    margin-top: 70px;
+    margin-bottom: 22px;
+}
+
+.f_copy{
+    text-align: center;
+}
+
+.f_copy p{
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #121212;
+    margin-bottom: 15px;
+}
+
